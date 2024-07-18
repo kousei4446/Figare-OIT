@@ -91,6 +91,7 @@ const Home = ({ myInfo, setMyInfo, setProf, serch, setSerch }) => {
     fetchAllPosts();
   }, [myInfo.place], [serch]);
 
+
   useEffect(() => {
     const fetchAllPosts = async () => {
       if (!serch || serch == "all") {
@@ -221,6 +222,20 @@ const Home = ({ myInfo, setMyInfo, setProf, serch, setSerch }) => {
     placeset();
     
   }
+  // useEffect(()=>{
+  //   async function fetchDocumentsContainingString(searchString){
+  //     const q = query(collection(db, 'chats'), where('message', '>=', searchString));
+  //     const querySnapshot = await getDocs(q);
+  //     const documents = [];
+  //     querySnapshot.forEach((doc) => {
+  //         // ドキュメントのデータを取得する方法
+  //         documents.push({ id: doc.id, ...doc.data() });
+  //         // doc.data()
+  //     });
+  //     console.log(documents)
+  //   }
+  //   fetchDocumentsContainingString(localStorage.getItem("uid"))
+  // },[])
   return (
     <div className="home-container">
       <div className='background'>

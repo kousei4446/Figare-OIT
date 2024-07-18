@@ -36,8 +36,6 @@ function App() {
   const [myInfo, setMyInfo] = useState({ userName: "", place: "", photoURL: "" });
   const [disInfo, setDisInfo] = useState({ kind: "", text: "", img: "", file: "", place: "", poster: "" });
   const [profile, setProfile] = useState({ name: "", furigana: "", gender: "", password: "", tel: "", auth: false, time: null });
-  const [hitoInfo, setHitoInfo] = useState({ name: "", age: "", time: "", gender: "", place: "", tokutyou: "" });
-  const [petInfo, setPetInfo] = useState({ name: "", time: "", place: "", tokutyou: "" });
   const [serch, setSerch] = useState('');
 
   return (
